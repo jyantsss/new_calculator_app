@@ -11,7 +11,21 @@ Array.from(buttons).forEach((button)=>{
       string = ""
       document.querySelector('input').value = string;
     }
-    
+    else if (e.target.innerHTML == 'M+') {
+        memory += string;
+        string = "";
+        document.querySelector('input').value = string;
+      } 
+      else if (e.target.innerHTML == 'M-') {
+        memory -= parseFloat(string); 
+        string = "";
+        document.querySelector('input').value = string;
+      } 
+      else if (e.target.innerHTML == 'MRC') {
+        string = eval(memory.toString()); 
+        document.querySelector('input').value = string;
+        
+      }
     else{ 
     console.log(e.target)
     string = string + e.target.innerHTML;

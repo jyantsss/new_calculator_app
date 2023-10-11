@@ -25,3 +25,9 @@ html, body {
     border: 2px solid black;
     border-radius: 5px;
 }
+
+.bg {
+  background-image: url('bg2.png');
+  width: 1300px;
+  height: 600px;
+}
