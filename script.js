@@ -12,13 +12,13 @@ Array.from(buttons).forEach((button)=>{
       document.querySelector('input').value = string;
     }
     else if (e.target.innerHTML == 'M+') {
-        memory += parseFloat(string);
+        memory += parseFloat(eval(string)); // Adding the value of string to memory after calculation using eval()
         string = "";
         document.querySelector('input').value = string;
         
       } 
       else if (e.target.innerHTML == 'M-') {
-        memory -= parseFloat(string); 
+        memory -= parseFloat(eval(string)); 
         string = "";
         document.querySelector('input').value = string;
       } 
